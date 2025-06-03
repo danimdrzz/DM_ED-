@@ -45,6 +45,16 @@ public class DM_Moto {
 				+ consumo + "]";
 	}
 	private String modelo;
+	public DM_Moto(String matricula, String modelo, int numero_de_plazas, double velocidad_media,
+			String tipo_combustible, double consumo) {
+		super();
+		this.matricula = matricula;
+		this.modelo = modelo;
+		this.numero_de_plazas = numero_de_plazas;
+		this.velocidad_media = velocidad_media;
+		this.tipo_combustible = tipo_combustible;
+		this.consumo = consumo;
+	}
 	private int numero_de_plazas;
 	private double velocidad_media;
 	private String tipo_combustible;

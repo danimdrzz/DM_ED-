@@ -1,5 +1,7 @@
 package Java;
 
+import Java.DM_TipoDeCombustible.TipoCombustible;
+
 public class DM_Coche {
 	public int getNumero_de_plazas() {
 		return numero_de_plazas;
@@ -25,10 +27,10 @@ public class DM_Coche {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	public String getTipo_de_combustible() {
+	public double getTipo_de_combustible() {
 		return tipo_de_combustible;
 	}
-	public void setTipo_de_combustible(String tipo_de_combustible) {
+	public void setTipo_de_combustible(double tipo_de_combustible) {
 		this.tipo_de_combustible = tipo_de_combustible;
 	}
 	public double getConsumo() {
@@ -45,8 +47,26 @@ public class DM_Coche {
 				+ consumo + "]";
 	}
 	private String matricula;
+	public DM_Coche(int numero_de_plazas, String matricula, double velocidad_media, String modelo,
+			double tipo_de_combustible, double consumo) {
+		super();
+		this.numero_de_plazas = numero_de_plazas;
+		this.matricula = matricula;
+		this.velocidad_media = velocidad_media;
+		this.modelo = modelo;
+		this.tipo_de_combustible = tipo_de_combustible;
+		this.consumo = consumo;
+	}
+	public DM_Coche(String string, String matricula2, int velocidad_media2, int i, TipoCombustible gasolina,
+			double consumo2) {
+		
+	}
 	private double velocidad_media;
 	private String modelo;
-	private String tipo_de_combustible;
+	private double tipo_de_combustible;
 	private double consumo;
+	public double getPlazas() {
+		
+		return 0;
+	}
 }
